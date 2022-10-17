@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		"lib": [
+			"es5",
+			"es6",
+			"es7",
+			"es2015",
+			"es2016",
+			"es2017",
+			"es2018",
+			"esnext",
+			"dom"
+		],
+		"target": "es2017",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"declaration": true,
+		"declarationMap": true,
+		"inlineSourceMap": true,
+		"inlineSources": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strictPropertyInitialization": false,
+		"skipLibCheck": true,
+		"allowJs": true
+	}
+	// "include": ["src/**/*.ts", "src/**/*.hbs"],
+	// "exclude": ["node_modules"]
+}
