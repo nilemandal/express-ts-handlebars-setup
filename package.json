@@ -4,9 +4,10 @@
 	"description": "",
 	"main": "app.ts",
 	"scripts": {
-		"start": "cp -R src/public dist && cp -R src/views dist && tsc && NODE_ENV=production node dist/app.js",
-		"dev": "nodemon src/app.ts",
-		"build": "NODE_ENV=production tsc"
+		"start": "cp -R src/public dist && cp -R src/views dist && tsc && NODE_ENV=production node dist/app.js & npm run scss",
+		"dev": "nodemon src/app.ts & npm run scss",
+		"build": "NODE_ENV=production tsc & npm run scss",
+		"scss": "sass --watch src/scss:src/public/styles"
 	},
 	"repository": {
 		"type": "git",
@@ -30,6 +31,7 @@
 		"dotenv": "^16.0.3",
 		"express": "^4.18.2",
 		"express-handlebars": "^6.0.6",
-		"helmet": "^6.0.0"
+		"helmet": "^6.0.0",
+		"sass": "^1.55.0"
 	}
 }
