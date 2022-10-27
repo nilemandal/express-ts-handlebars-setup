@@ -47,3 +47,8 @@ app.get('/', (req: Request, res: Response) => {
 app.listen(3000, () => {
 	console.log('Server Running');
 });
+
+process.on('SIGINT', () => {
+	console.log('Bye for now, See you soon.');
+	process.exit();
+});
