@@ -26,8 +26,9 @@
 		"forceConsistentCasingInFileNames": true,
 		"strictPropertyInitialization": false,
 		"skipLibCheck": true,
-		"allowJs": true
+		"allowJs": true,
+		"resolveJsonModule": true
 	}
-	// "include": ["src/**/*.ts", "src/**/*.hbs"],
+	// "include": ["src/**/*.ts", "src/**/*.hbs"]
 	// "exclude": ["node_modules"]
 }
