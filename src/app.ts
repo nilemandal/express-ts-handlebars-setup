@@ -11,6 +11,7 @@ const app: Application = express();
 app.engine(
 	'hbs',
 	engine({
+		helpers: require('./models/helpers'),
 		defaultLayout: __dirname + '/views/layouts/index',
 		extname: '.hbs',
 		layoutsDir: __dirname + '/views/layouts',
