@@ -42,7 +42,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req: Request, res: Response) => {
-	res.render('index');
+	res.render('index', {
+		title: 'Express TS Setup',
+	});
 });
 
 app.listen(3000, () => {

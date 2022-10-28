@@ -37,7 +37,14 @@
 		></script>
 		{{! END : jQuery }}
 
-		<title>Document</title>
+		{{#each css}}
+			<link rel='stylesheet' href='{{this}}' />
+		{{/each}}
+		{{#each js}}
+			<script src='{{this}}'></script>
+		{{/each}}
+
+		<title>{{title}}</title>
 	</head>
 	<body>
 		{{{body}}}
